@@ -52,5 +52,15 @@ namespace Nardax.Tests
 
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TruncateLeft_ValueIsLarger_TruncateRemovesLeftSide_Kalle_Kula_Testar()
+        {
+            var expected = "789";
+
+            var result = _value.TruncateLeft(1);
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }
