@@ -4,7 +4,7 @@ using System.Reflection;
 
 //Hellow World
 namespace Nardax
-{
+{//Hitta AppSettings-värden utfirån Assembly
     public static class AssemblyExtensions
     {
         public static string GetAppSettingsValue(this Assembly assembly, string key)
