@@ -24,6 +24,7 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
         }
 
+<<<<<<< HEAD
         [TestMethod]
         public void TruncateLeft_ValueIsSmaller_TruncateRemovesLeftSide()
         {
@@ -62,3 +63,6 @@ namespace Nardax.Tests
         }
     }
 }
+=======
+        //Här är någonting med Go banana
+>>>>>>> 14911897650afeea070ef1d3fc1b02bb04304ae2

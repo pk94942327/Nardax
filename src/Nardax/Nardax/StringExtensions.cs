@@ -1,6 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
+<<<<<<< .merge_file_a13280
 using System.Text;
+=======
+>>>>>>> .merge_file_a11892
 
 namespace Nardax
 {
@@ -27,6 +30,7 @@ namespace Nardax
 
             return value.Substring(0, maxLength);
         }
+<<<<<<< .merge_file_a13280
 
         public static string RepeatMe(this string value, int times)
         {
@@ -37,5 +41,7 @@ namespace Nardax
             }
             return sb.ToString();
         }
+=======
+>>>>>>> .merge_file_a11892
     }
 }
