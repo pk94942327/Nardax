@@ -24,3 +24,4 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
         }
 
+        //Här är någonting med Go banana
