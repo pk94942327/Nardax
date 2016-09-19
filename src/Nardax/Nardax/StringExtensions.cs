@@ -18,14 +18,5 @@ namespace Nardax
             return value.Substring(startIndex, maxLength);
         }
 
-        public static string TruncateRight(this string value, int maxLength)
-        {
-            if (value.Length < maxLength)
-            {
-                return value;
-            }
-
-            return value.Substring(0, maxLength);
-        }
     }
 }
