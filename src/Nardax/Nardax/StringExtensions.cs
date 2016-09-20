@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-
-namespace Nardax
+﻿namespace Nardax
 {
     public static class StringExtensions
     {
