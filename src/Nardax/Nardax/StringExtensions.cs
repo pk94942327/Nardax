@@ -1,4 +1,6 @@
-﻿namespace Nardax
+﻿using System.Text;
+
+namespace Nardax
 {
     public static class StringExtensions
     {
@@ -24,5 +26,16 @@
 
             return value.Substring(0, maxLength);
         }
+
+        public static string RepeatMe(this string value, int times)
+        {
+            var sb = new StringBuilder();
+            for (var i = 0; i < times; i++)
+            {
+                sb.Append(value);
+            }
+            return sb.ToString();
+        }
+
     }
 }
