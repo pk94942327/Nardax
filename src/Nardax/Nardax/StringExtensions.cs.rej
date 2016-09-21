@@ -1,0 +1,22 @@
+diff a/src/Nardax/Nardax/StringExtensions.cs b/src/Nardax/Nardax/StringExtensions.cs	(rejected hunks)
+@@ -30,16 +30,18 @@
+ 
+             return value.Substring(0, maxLength);
+         }
++<<<<<<< .merge_file_a13280
+ 
+         public static string RepeatMe(this string value, int times)
+         {
+             var sb = new StringBuilder();
+-            for (var i = 0; i < times; i++)
++            for(var i = 0; i < times; i++)
+             {
+                 sb.Append(value);
+             }
+             return sb.ToString();
+         }
+-
++=======
++>>>>>>> .merge_file_a11892
+     }
+ }
