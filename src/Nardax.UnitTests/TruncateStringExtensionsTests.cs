@@ -24,4 +24,45 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
         }
 
+<<<<<<< HEAD
+        [TestMethod]
+        public void TruncateLeft_ValueIsSmaller_TruncateRemovesLeftSide()
+        {
+            var expected = "123456789";
+
+            var result = _value.TruncateLeft(20);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TruncateRight_ValueIsLarger_TruncateRemovesRightSide()
+        {
+            var expected = "1";
+
+            var result = _value.TruncateRight(1);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TruncateRight_ValueIsSmaller_TruncateRemovesRightSide()
+        {
+            var expected = "123456789";
+
+            var result = _value.TruncateRight(20);
+
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void RepeatMe()
+        {
+            var expected = "käbbelkäbbelkäbbel";
+            var result = "käbbel".RepeatMe(3);
+            Assert.AreEqual(expected, result);
+        }
+    }
+}
+=======
         //Här är någonting med Go banana
+>>>>>>> 14911897650afeea070ef1d3fc1b02bb04304ae2
