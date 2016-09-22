@@ -33,6 +33,15 @@ namespace Nardax
             return Regex.Replace(value, "\\s", "");
         }
 
+        public static string RepeatMe(this string value, int times)
+        {
+            var sb = new StringBuilder();
+            for(var i = 0; i < times; i++)
+            {
+                sb.Append(value);
+            }
+            return sb.ToString();
+        }
 
     }
 }
