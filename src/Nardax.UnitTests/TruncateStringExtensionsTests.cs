@@ -24,7 +24,6 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
         }
 
-<<<<<<< HEAD
         [TestMethod]
         public void TruncateLeft_ValueIsSmaller_TruncateRemovesLeftSide()
         {
@@ -61,8 +60,15 @@ namespace Nardax.Tests
             var result = "käbbel".RepeatMe(3);
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void RemoveWhiteChars()
+        {
+            var testString = "i\twill \tsurvive\t";
+            var result = testString.RemoveWhiteChars();
+            var expected = "iwillsurvive";
+            Assert.AreEqual(expected, result);
+        }
+
     }
 }
-=======
-        //Här är någonting med Go banana
->>>>>>> 14911897650afeea070ef1d3fc1b02bb04304ae2
