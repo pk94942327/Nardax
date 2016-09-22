@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Nardax
 {
@@ -42,5 +44,6 @@ namespace Nardax
             }
             return sb.ToString();
         }
+
     }
 }
