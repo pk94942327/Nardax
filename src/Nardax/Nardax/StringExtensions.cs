@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Nardax
 {
     public static class StringExtensions
     {
+        //Klipper av en sträng från vänster
         public static string TruncateLeft(this string value, int maxLength)
         {
             var startIndex = value.Length - maxLength;
@@ -29,21 +29,9 @@ namespace Nardax
             return value.Substring(0, maxLength);
         }
 
-
         public static string RemoveWhiteChars(this string value)
         {
             return Regex.Replace(value, "\\s", "");
         }
-
-        public static string RepeatMe(this string value, int times)
-        {
-            var sb = new StringBuilder();
-            for(var i = 0; i < times; i++)
-            {
-                sb.Append(value);
-            }
-            return sb.ToString();
-        }
-
     }
 }
